@@ -1,24 +1,14 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Environment variables
+.env
+.env.*
+!.env.example
+git rm -r --cached photo
+git rm --cached tsconfig.app.tsbuildinfo
+# Java files
+*.class
 
-node_modules
-dist
-dist-ssr
-*.local
+# TypeScript build cache
+*.tsbuildinfo
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Unnecessary local photo folder (only if not used by website)
+photo/
